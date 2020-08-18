@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-export default class AddNumberClone extends Component {
+export default class AddNumber extends Component {
     state = {
         size: 1,
     };
@@ -18,7 +18,7 @@ export default class AddNumberClone extends Component {
                     type="text"
                     value={this.state.size}
                     onChange={function (e) {
-                        this.setState({ size: e.target.value });
+                        this.setState({ size: Number(e.target.value) });
                     }.bind(this)}
                 ></input>
             </div>
