@@ -3,7 +3,7 @@ import './App.css';
 import AddNumberRoot from './react-module/AddNumberRoot';
 import DisplayNumberRoot from './react-module/DisplayNumberRoot';
 
-export default class AppClone extends Component {
+export default class AppReact extends Component {
     state = { number: 0 };
     render() {
         return (
