@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import AddNumberRoot from './module/AddNumberRoot';
-import DisplayNumberRoot from './module/DisplayNumberRoot';
+import AddNumberRoot from './react-module/AddNumberRoot';
+import DisplayNumberRoot from './react-module/DisplayNumberRoot';
 
 export default class AppClone extends Component {
     state = { number: 0 };
