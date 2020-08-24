@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import sotre from '../store';
-import store from '../store';
+
 export default class DisplayNumber extends Component {
     state = { number: store.getState().number };
     constructor(props) {
