@@ -1,8 +1,10 @@
 import DisplayNumber from '../component/DisplayNumber';
 import { connect } from 'react-redux';
 function mapReduxStateToReactProps(state) {
+    //>> redux의 state
     return {
         number: state.number,
+        username: state.username,
     };
 }
 function mapReduxDispatchToReactProps() {

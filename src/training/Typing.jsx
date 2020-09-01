@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-
+import store from '../training/store';
 export default class Typing extends Component {
     state = {
         keyWord: '',
     };
     handleKeyPress = (e) => {
         if (e.key === 'Enter') {
+            store.dispatch({ type: 'PUSH', cmd: e.target.value });
             this.setState({
                 keyWord: e.target.value,
             });
